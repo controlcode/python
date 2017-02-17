@@ -12,8 +12,8 @@ cursor.close()
 
 cursor = connection.cursor()
 
-cursor.execute("insert into feedback_responses"
-                "values ()")
+cursor.execute("ionnection.execute("insert into feedback_responses values('2', 'Bad', 'Bad', 'New', '17/02/2017')")
+
 cursor.close()
 
 connection.commit()
