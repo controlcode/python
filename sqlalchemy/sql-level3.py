@@ -85,3 +85,16 @@ for row in result:
     print(row)
 
 print(conn.execute(select([user_table])).fetchall())
+
+#update
+
+update_stmt = user_table.update().\
+                values(fullname='Jack Brown').\
+                where(user_table.c.username == 'jack')
+
+result = conn.execute(update_stmt)
+
+delete_stmt = user_table.delete().\
+                where(user_table.c.username == 'jack')
+
+result = conn.execute(delete_stmt)
