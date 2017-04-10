@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+def test(a=5, b=6,c=7 ,d=8):
+	print("a {}".format(a))
+	print("b {}".format(b))
+	print("c {}".format(c))
+	print("d {}".format(d))
+
+kwargs = {"a":1, "b":2, "c":3, "d":4}
+
+test(**kwargs)
+test()
